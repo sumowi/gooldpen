@@ -1,7 +1,7 @@
 ---
 title: Neuron
-featured: ./img/1.png
-background: ./img/1.png
+featured: ./img/1.jpg
+background: ./img/1.jpg
 date: 2021-02-07 23:29:077
 client: Neuron
 category: 
