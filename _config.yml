@@ -103,7 +103,7 @@ ignore:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /images/logo2.png
+  loadingImg: ./img/logo2.png
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
