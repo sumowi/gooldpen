@@ -1,4 +1,10 @@
-<rule>
-<from>/test/(0-9)+.html</from>
-<to type="forward">/public/index.html</to>
-</rule>
+<script>
+   $.ajax({
+       url:'./public/index.html',
+       type:'get',
+       success:function(res){
+           $('#router').html($(res));
+       }
+   });
+    // $('#router').load('./test.html');
+</script>
