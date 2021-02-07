@@ -1,0 +1,23 @@
+include ../mixins/about
+
+section#about.about.scrollspy
+    .container
+        h2: span 团队
+        h3 汇集世界一流人才、服务世界顶级期刊
+        .row
+            // About general photo
+            +general-photo
+
+            // About carousel 轮播图
+            .owl-carousel.owl-theme.col.s12.l6
+                each star, i in site.data['stars']
+                    +star(star, i)
+                .col.s12
+                    .rectangle.grey.lighten-3
+                        .content.valign-wrapper.you
+                            .name 想加入我们?
+                                br
+                                a(href='mailto:job@react?subject=Job%20Application') 诚聘英才
+
+            each star, i in site.data['stars']
+                +detail(star, i)

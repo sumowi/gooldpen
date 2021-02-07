@@ -1,0 +1,8 @@
+include ../mixins/home-posts
+
+section#blog.blog.scrollspy
+    .container
+        h2: span 博客
+        h3 分享最实用的技能，传递最前沿的资讯
+        .row.posts
+            +top5posts

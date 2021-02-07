@@ -1,0 +1,11 @@
+include ../mixins/faqs
+
+section#faqs.faqs.scrollspy
+    .container
+        h2: span 问题
+        h3 常见问题
+        .row
+            .col.s12
+                ul.collapsible(data-collapsible='accordion')
+                    each faq in site.data['faqs']
+                        +faq(faq)

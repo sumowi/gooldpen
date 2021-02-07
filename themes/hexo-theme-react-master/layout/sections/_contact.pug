@@ -1,0 +1,38 @@
+section#contact.contact.scrollspy
+    .container
+        h2: span 流程
+        h3 填写您的需求，我们主动联系您
+        .row.send-message
+            .col.s12.l8.offset-l2
+                if (formType=='human')
+                    #human-form.card-panel.center.hoverable
+                        .row
+                            .col.s12
+                                p.flow-text
+                                    | 致创科金笔团队：
+                                    br
+                                    | 我是&nbsp;
+                                    span#name-human(contenteditable='true')
+                                    |,
+                                    | 你可以通过&nbsp联系我
+                                    span#contact-human(contenteditable='true', data-position='top', data-delay='10', data-tooltip='微信、QQ、电话或者邮件').tooltipped
+                                    |.
+                                p.flow-text
+                                    span#message-human(contenteditable='true') 我需要设计...
+                                button#send-message-human.btn.btn-large.btn-flat.waves-effect.waves-light Send
+                else if (formType=='classic')
+                    .card-panel.center.hoverable
+                        form#classic-form.row(action='mailer/mailer.php', novalidate, autocomplete='off')
+                            .col.s12.l6
+                                .input-field
+                                    input#name-classic.validate(type='text', name='name')
+                                    label(for='name-classic') Name
+                            .col.s12.l6
+                                .input-field
+                                    input#contact-classic.validate(type='email', name='email')
+                                    label(for='contact-classic') Email
+                            .col.s12
+                                .input-field
+                                    textarea#message-classic.materialize-textarea(name='message')
+                                    label(for='message-classic') Textarea
+                            button#send-message-classic.btn.btn-large.btn-flat.waves-effect.waves-light(type='submit') Send

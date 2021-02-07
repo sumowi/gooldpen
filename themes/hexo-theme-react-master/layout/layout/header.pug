@@ -1,0 +1,20 @@
+// Navigation bar
+include ../mixins/menu-list
+header.navbar-fixed
+    nav
+        .container
+            .nav-wrapper
+                .brand-logo
+                    a(href='#!'): img(src=config.logo,height="54")
+                    a(href='#!')=`${config.logo_title}`
+                // Default navigation
+                ul.right.hide-on-med-and-down.table-of-contents
+                    +list
+                    
+                // Visible on medium and smaller devices
+                ul#slide-out.side-nav
+                    +list
+                    
+                // Hamburger
+                a.button-collapse.valign-wrapper(href='#', data-activates='slide-out')
+                    .hamburger
