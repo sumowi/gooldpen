@@ -107,7 +107,7 @@ lazyload:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-react-master
+theme: jekyll-theme-cayman
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
