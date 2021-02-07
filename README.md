@@ -1,1 +1,2 @@
-# sumowi.github.io
+# gooldkey.com
+# gooldpen.top
