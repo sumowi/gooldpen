@@ -1,5 +1,6 @@
 sh public.sh
-
+cp baidu_verify_code-690DeUCnCe.html ./public/baidu_verify_code-690DeUCnCe.html
+cp baidu_verify_code-U1w4aWDvST.html ./public/baidu_verify_code-U1w4aWDvST.html
 #git init
 #git remote add origin git@github.com:sumowi/gooldpen.git
 #git remote add giteeorigin git@gitee.com:creativeflow/gooldpen.git
