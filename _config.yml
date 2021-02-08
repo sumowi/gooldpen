@@ -103,11 +103,17 @@ ignore:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: ./img/logo2.png
+  loadingImg: 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+
 theme: hexo-theme-react-master
+
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

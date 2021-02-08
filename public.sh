@@ -1,2 +1,2 @@
-#hexo clean
+hexo clean
 hexo g
